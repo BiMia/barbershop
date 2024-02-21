@@ -1,0 +1,45 @@
+.root {
+    --header-font: 'Raleway'
+    --content-font: 'Open Sans'
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sidebar-container {
+    max-width: 155px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.header-container {
+    display: flex;
+    width: 1125px;
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-elements {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-content {
+    width: 1125px;
+}
