@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The Best Barber Shop in Your City" />
+    <meta name="keywords" content="beard, trim, cut, hair, Barbers" />
     <title>BarberShop</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,6 +37,7 @@
         <ul class="sidebar-list">
           <li>
             <a
+              class="social-media-link"
               href="https://www.youtube.com/"
               target="_blank"
               rel="noopener noreferrer nofollow"
@@ -42,13 +45,14 @@
             >
           </li>
           <li>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+            <a
+              class="social-media-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener"
               >Instagram</a
             >
           </li>
-          <svg width="16" height="16">
-            <use href="./images/icons.svg#finger" />
-          </svg>
           <svg width="1" height="60">
             <use href="./images/icons.svg#hero-rectangle" />
           </svg>
@@ -60,13 +64,15 @@
         <header class="header-container">
           <nav class="nav-elements">
             <ul class="header-list">
-              <li><a href=""></a>About</li>
-              <li><a href=""></a>Services and Prices</li>
-              <li><a href=""></a>Barbers</li>
-              <li><a href=""></a>Contacts</li>
+              <li><a href="#about"></a>About</li>
+              <li><a href="#prices"></a>Services and Prices</li>
+              <li><a href="#barbers"></a>Barbers</li>
+              <li><a href="#contacts"></a>Contacts</li>
             </ul>
             <div>
-              <a href="+380441111111">+38 044 111 11 11</a>
+              <address>
+                <a href="+380441111111">+38 044 111 11 11</a>
+              </address>
               <button type="button">book a Service</button>
             </div>
           </nav>
@@ -92,30 +98,320 @@
         </div>
       </div>
     </section>
-    <!--About section-->
-    <section>
-      <div>
-        <img src="./images/about-img1.jpg" alt="trim beard" />
-        <img src="./images/about-img2.jpg" alt="cut hair" />
-      </div>
+
+    <main>
+      <!--About section-->
+      <section id="about">
+        <div>
+          <img src="./images/about-img1.jpg" alt="trim beard" width="270" />
+          <img src="./images/about-img2.jpg" alt="cut hair" width="270" />
+        </div>
+        <div>
+          <svg>
+            <use href="./images/icons.svg#horizontal-rectangle" />
+          </svg>
+          <h3>About</h3>
+        </div>
+        <h2>The Best Barbershop in Your City</h2>
+        <p>
+          If you want to add more confidence to your image, you are definitely
+          in the right place.
+        </p>
+        <p>
+          We are a team that never rests on its laurels and yearns for change.
+          And once you fall into the hands of our master, you will never be the
+          same again. We are a team that is always on the same wavelength with
+          clients. Therefore, we are always ready to improve everyone who comes
+          to us!
+        </p>
+        <button type="button">book a Service</button>
+      </section>
+
+      <!--Services and prices section-->
+      <section id="prices">
+        <div>
+          <svg>
+            <use href="./images/icons.svg#horizontal-rectangle" />
+          </svg>
+          <h3>Spend time in the company of the best craftsmen</h3>
+        </div>
+        <h2>Services and Prices</h2>
+        <!--Price list-->
+        <div>
+          <ul>
+            <li>
+              <span>Men's Haircut</span>
+              <span>from 300 UAH </span>
+            </li>
+            <li>
+              <span>Beard Trim</span>
+              <span>from 200 UAH</span>
+            </li>
+            <li>
+              <span>Mustache Trim</span>
+              <span>from 200 UAH</span>
+            </li>
+            <li>
+              <span>Mustache Trim</span>
+              <span>from 200 UAH</span>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <span>Trainee Haircut</span>
+              <span>from 50 UAH</span>
+            </li>
+            <li>
+              <span>Buzz Cut</span>
+              <span>from 200 UAH</span>
+            </li>
+            <li>
+              <span>Kids Haircut (&lt;12 y.o.)</span>
+              <span>from 300 UAH</span>
+            </li>
+            <li>
+              <span>Gray Coverage</span>
+              <span>from 200 UAH</span>
+            </li>
+          </ul>
+        </div>
+        <button type="button">book a Service</button>
+      </section>
+
+      <!--Why us section-->
+      <section>
+        <ul>
+          <li>
+            <h3>600<sup>+</sup></h3>
+            <p>Satisfied Customers per Day</p>
+          </li>
+          <li>
+            <h3>50<sup>+</sup></h3>
+            <p>Excellent Service Awards</p>
+          </li>
+          <li>
+            <h3>20<sup>+</sup></h3>
+            <p>The Best Barbers of Kyiv</p>
+          </li>
+          <li>
+            <h3>100<sup>+</sup></h3>
+            <p>Gifts for Regular Customers</p>
+          </li>
+        </ul>
+        <div>
+          <svg>
+            <use href="./images/icons.svg#horizontal-rectangle" />
+          </svg>
+          <h3>Old School</h3>
+        </div>
+        <h2>Why do they come to us?</h2>
+        <p>
+          Only good things are said about us. But it is better to see and feel 1
+          time than to read 10 times.
+        </p>
+      </section>
+
+      <!--Our barbers section-->
+      <section id="barbers">
+        <div>
+          <svg>
+            <use href="./images/icons.svg#horizontal-rectangle" />
+          </svg>
+          <h3>for true connoisseurs of the atmosphere</h3>
+        </div>
+        <h2>Our Barbers</h2>
+        <ul>
+          <li>
+            <img src="./images/barber-john.png" alt="John Smith" width="370" />
+            <div>
+              <h4>John Smith</h4>
+              <p>Extreme Barber</p>
+              <ul>
+                <li>
+                  <a href="">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#instagram" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#twitter" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#facebook" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#linkedin" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <img
+              src="./images/barber-michele.png"
+              alt="Michele Doe"
+              width="370"
+            />
+            <div>
+              <h4>Michele Doe</h4>
+              <p>Extreme Barber</p>
+              <ul>
+                <li>
+                  <a href="">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#instagram" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#twitter" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#facebook" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#linkedin" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <img src="./images/barber-alan.png" alt="Alan Black" width="370" />
+            <div>
+              <h4>Alan Black</h4>
+              <p>Extreme Barber</p>
+              <ul>
+                <li>
+                  <a href="">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#instagram" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#twitter" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#facebook" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#linkedin" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!--Portofolio-->
+      <section>
+        <div>
+          <svg>
+            <use href="./images/icons.svg#horizontal-rectangle" />
+          </svg>
+          <h3>In Latin, &quot;barba&quot; means &quot;beard&quot;</h3>
+          <ul>
+            <li>
+              <img src="./images/hair-cut.png" alt="hair-cut" width="270" />
+            </li>
+            <li>
+              <img
+                src="./images/beard-shave.png"
+                alt="beard-shave"
+                width="270"
+              />
+            </li>
+            <li>
+              <img src="./images/face-wash.png" alt="face-wash" width="270" />
+            </li>
+            <li>
+              <img src="./images/trim-back.png" alt="trim-back" width="270" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--Contacts-section-->
+      <section id="contacts">
+        <h2>Contacts</h2>
+        <address>
+          <span>Main Street, 7A Kyiv, 08132</span><br />
+          <a href="tel:+380441111111">+38 044 111 11 11</a><br />
+          <a href="mailto:barbershop@email.com">barbershop@email.com</a>
+          <div>
+            <svg>
+              <use href="./images/icons.svg#horizontal-rectangle" />
+            </svg>
+            <h3>working hours</h3>
+          </div>
+          <p>Daily from 9:00 AM till 22:00 PM</p>
+        </address>
+      </section>
+    </main>
+    <!--Footer-->
+    <footer>
+      <p>&copy;Copyright 2022</p>
       <div>
         <svg>
           <use href="./images/icons.svg#horizontal-rectangle" />
         </svg>
-        <h3>About</h3>
+        <ul>
+          <li>
+            <a
+              class="social-media-link"
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >Youtube</a
+            >
+          </li>
+          <li>
+            <a
+              class="social-media-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener"
+              >Instagram</a
+            >
+          </li>
+        </ul>
       </div>
-      <h2>The Best Barbershop in Your City</h2>
-      <p>
-        If you want to add more confidence to your image, you are definitely in
-        the right place.
-      </p>
-      <p>
-        We are a team that never rests on its laurels and yearns for change. And
-        once you fall into the hands of our master, you will never be the same
-        again. We are a team that is always on the same wavelength with clients.
-        Therefore, we are always ready to improve everyone who comes to us!
-      </p>
-      <button type="button">book a Service</button>
-    </section>
+    </footer>
   </body>
 </html>
