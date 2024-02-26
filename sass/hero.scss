@@ -1,15 +1,237 @@
+:root {
+    --primary-color: #FF6C00;
+    --dark-color: #303030;
+    --light-color: #fff;
+    --gray-color: #9da4bd99;
+    --paragraph-color: #555;
+
+    --header-font-family: "Raleway";
+    --body-font-family: "Open Sans";
+}
+
+/*Global styles*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: var(--body-font-family);
+}
+
 ul {
     list-style: none;
+    padding: 0;
 }
 
 a {
     text-decoration: none;
 }
 
-.social-media-link {
-    color:#303030;
+/*Classes*/
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
 }
 
-.social-media-link:hover {
-    color:#FF6C00;
+.hero-container {
+    background-image: url("../images/hero-image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    flex-grow: 1;
+    padding: 40px 55px 55px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-control-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.hero-buttons {
+    background: none;
+    border: none;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.1px;
+    cursor:pointer;
+}
+
+.hero-dark-button {
+    color: var(--gray-color)
+}
+
+.hero-light-button {
+    color: var(--light-color);
+}
+
+.sidebar-container {
+    width: 155px;
+    padding: 32px 32px 40px 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.social-media-link {
+    color: var(--dark-color);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.2px;
+}
+
+.social-media-link:hover,
+.social-media-link:focus {
+    color: var(--primary-color);
+}
+
+.social-media-element:first-child {
+    margin-bottom: 40px;
+}
+
+.sidebar-svg {
+    margin-top: 40px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-link {
+    color: var(--light-color);
+    font-family: var(--body-font-family);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--primary-color);
+}
+
+.nav-link-active {
+    color: var(--primary-color);
+}
+
+.header-cta {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.address-contacts {
+    color: var(--light-color);
+    font-family: var(--body-font-family);
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.address-contacts:hover,
+.address-contacts:focus {
+    color: var(--primary-color);
+}
+
+.book-service-button {
+    background-color: rgba(0, 0, 0, 0,);
+    border: 1px solid var(--primary-color);
+    width: 160px;
+    height: 40px;
+    border-radius: 25px;
+    color: var(--light-color);
+    font-family: var(--body-font-family);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.book-service-button-dark {
+    color: var(--dark-color);
+}
+
+.book-service-button:hover,
+.book-service-button:focus {
+    background-color: var(--primary-color);
+}
+
+.hero-content > :nth-child(n + 2){
+    margin-top: 20px;
+
+}
+
+.subtitle-container {
+    display: flex;
+    gap: 20px;
+}
+
+.subtitle {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+}
+
+.subtitle-light {
+    color: var(--gray-color);
+}
+
+.subtitle-dark {
+    color: var(--dark-color);
+}
+
+.hero-title {
+    font-family: var(--header-font-family);
+    font-size: 72px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.6px;
+}
+
+.title {
+    font-family: var(--header-font-family);
+    font-size: 42px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.1px;
+}
+
+.title-dark {
+    color: var(--dark-color);
+}
+
+.title-light {
+    color: var(--light-color);
+}
+
+.hero-paragraph {
+    color: var(--gray-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.36px;
 }
