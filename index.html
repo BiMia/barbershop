@@ -66,53 +66,84 @@
       </div>
       <!--Hero content-->
       <div class="hero-container">
-        <!--Header-->
-        <header class="hero-header">
-          <nav>
-            <ul class="nav-list">
-              <li>
-                <a class="nav-link nav-link-active" href="#about">About</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#prices">Services and Prices</a>
-              </li>
-              <li><a class="nav-link" href="#barbers">Barbers</a></li>
-              <li><a class="nav-link" href="#contacts">Contacts</a></li>
-            </ul>
-          </nav>
-          <div class="header-cta">
-            <address>
-              <a class="address-contacts" href="+380441111111"
-                >+38 044 111 11 11</a
-              >
-            </address>
-            <button class="book-service-button" type="button">
-              book a Service
+        <div class="hero-carousel">
+          <img
+            class="hero-carousel-image"
+            src="./images/hero-slider2.jpeg"
+            alt=""
+            data-carousel-item
+          />
+          <img
+            class="hero-carousel-image"
+            src="./images/hero-slider1.png"
+            alt=""
+            data-carousel-item
+          />
+          <img
+            class="hero-carousel-image"
+            src="./images/hero-slider3.png"
+            alt=""
+            data-carousel-item
+          />
+        </div>
+
+        <div class="hero-carousel-content">
+          <!--Header-->
+          <header class="hero-header">
+            <nav>
+              <ul class="nav-list">
+                <li>
+                  <a class="nav-link nav-link-active" href="#about">About</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#prices">Services and Prices</a>
+                </li>
+                <li><a class="nav-link" href="#barbers">Barbers</a></li>
+                <li><a class="nav-link" href="#contacts">Contacts</a></li>
+              </ul>
+            </nav>
+            <div class="header-cta">
+              <address>
+                <a class="address-contacts" href="+380441111111"
+                  >+38 044 111 11 11</a
+                >
+              </address>
+              <button class="book-service-button" type="button">
+                book a Service
+              </button>
+            </div>
+          </header>
+          <!--Hero title-->
+          <section class="hero-content">
+            <div class="subtitle-container">
+              <img src="./images/divider.svg" alt="divider-bar" />
+              <h3 class="subtitle subtitle-light">
+                A hair salon for men in Kyiv
+              </h3>
+            </div>
+            <h1 class="hero-title title-light">BarberShop</h1>
+            <p class="hero-paragraph">
+              We are experts in trendy men's haircuts. <br />
+              We work quickly, carefully, and tastefully.
+            </p>
+          </section>
+          <!--Hero buttons-->
+          <div class="hero-control-buttons">
+            <button
+              class="hero-buttons hero-dark-button"
+              type="button"
+              onclick="onBack()"
+            >
+              Back
+            </button>
+            <button
+              class="hero-buttons hero-light-button"
+              type="button"
+              onclick="onNext()"
+            >
+              Next
             </button>
           </div>
-        </header>
-        <!--Hero title-->
-        <section class="hero-content">
-          <div class="subtitle-container">
-            <img src="./images/divider.svg" alt="divider-bar" />
-            <h3 class="subtitle subtitle-light">
-              A hair salon for men in Kyiv
-            </h3>
-          </div>
-          <h1 class="hero-title title-light">BarberShop</h1>
-          <p class="hero-paragraph">
-            We are experts in trendy men's haircuts. <br />
-            We work quickly, carefully, and tastefully.
-          </p>
-        </section>
-        <!--Hero buttons-->
-        <div class="hero-control-buttons">
-          <button class="hero-buttons hero-dark-button" type="button">
-            Back
-          </button>
-          <button class="hero-buttons hero-light-button" type="button">
-            Next
-          </button>
         </div>
       </div>
     </section>
@@ -444,5 +475,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/index.js"></script>
   </body>
 </html>
