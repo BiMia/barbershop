@@ -1,0 +1,57 @@
+.why-us-section {
+  padding: 130px 155px 150px;
+  height: 582px;
+  display: flex;
+}
+
+.card-title {
+  color: var(--dark-color);
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 2.1px;
+}
+
+.card-title > sup {
+  color: var(--primary-color);
+}
+
+.card-paragraph {
+  color: var(--dark-color);
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+.why-us-cards {
+  --card-width: 170px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: calc(var(--card-width) * 2 + 30px);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.why-us-card {
+  flex-basis: var(--card-width);
+  height: 133px;
+  background-color: #F7F7F7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 24px;
+}
+
+.why-us-card-shifted {
+  margin-top: 35px;
+}
+
+.why-us-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 130px;
+  width: 470px;
+  gap: 20px;
+}/*# sourceMappingURL=why-us.css.map */
