@@ -30,6 +30,9 @@
     <link rel="stylesheet" href="./sass/barbers.css" />
     <link rel="stylesheet" href="./sass/portofolio.css" />
     <link rel="stylesheet" href="./sass/contacts.css" />
+    <link rel="stylesheet" href="./sass/footer.css" />
+
+    <link rel="stylesheet" href="[path/to/css/feathericon.min.css" />
   </head>
   <body>
     <!--Hero section-->
@@ -430,30 +433,46 @@
         </ul>
       </section>
 
-      <!--Contacts-section-->
-      <section id="contacts" class="contacts-section">
-        <h2 class="title title-light">Contacts</h2>
-        <address>
-          <span class="contacts-address">Main Street, 7A Kyiv, 08132</span
-          ><br />
-          <a href="tel:+380441111111">+38 044 111 11 11</a><br />
-          <a href="mailto:barbershop@email.com">barbershop@email.com</a>
-          <div class="subtitle-container">
-            <img src="./images/divider.svg" alt="divider-bar" />
-            <h3>working hours</h3>
-          </div>
-          <p>Daily from 9:00 AM till 22:00 PM</p>
-        </address>
-      </section>
+      <!--Book-service-->
+      <div class="contacts-container">
+        <section class="book-service-section"></section>
+
+        <!--Contacts-section-->
+        <section id="contacts" class="contacts-section">
+          <h2 class="title title-light contacts-title">Contacts</h2>
+          <address>
+            <span class="contacts-address">
+              <i class="contacts-icons" data-feather="map-pin"></i>
+              Main Street, 7A Kyiv, 08132</span
+            ><br />
+            <a class="contacts-address" href="tel:+380441111111">
+              <i class="contacts-icons" data-feather="phone"></i>+38 044 111 11
+              11</a
+            ><br />
+            <a
+              class="contacts-address contacts-address-mail"
+              href="mailto:barbershop@email.com"
+            >
+              <i class="contacts-icons" data-feather="mail"></i
+              >barbershop@email.com</a
+            >
+            <div class="subtitle-container contacts-content">
+              <img src="./images/divider.svg" alt="divider-bar" />
+              <h3 class="contacts-subtitle">working hours</h3>
+            </div>
+            <p class="contacts-paragraph">Daily from 9:00 AM till 22:00 PM</p>
+          </address>
+        </section>
+      </div>
     </main>
     <!--Footer-->
-    <footer>
-      <p>&copy;Copyright 2022</p>
-      <div>
-        <svg>
-          <use href="./images/icons.svg#horizontal-rectangle" />
-        </svg>
-        <ul>
+    <footer class="footer-section">
+      <p class="footer-paragraph">&copy;Copyright 2022</p>
+      <div class="footer-container">
+        <ul class="footer-list">
+          <li>
+            <img src="./images/divider.svg" alt="" />
+          </li>
           <li>
             <a
               class="social-media-link"
@@ -476,5 +495,9 @@
       </div>
     </footer>
     <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>

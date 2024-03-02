@@ -1,7 +1,38 @@
+.contacts-container {
+    display: flex;
+}
+
+.book-service-section {
+    width: 55%;
+    background-color: #191c19;
+}
+
 .contacts-section {
     height: 644px;
     color: #fff;
-    background-color: #090B13;
+    width: 45%;
+    padding: 130px 100px;
+
+    background-color: rgba(25, 28, 38, 0.85);
+    background-image:linear-gradient(rgba(17, 19, 25, 0.8),
+    rgba(17, 19, 25, 0.8)),
+    url("../images/contacts-img.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contacts-title {
+    margin-bottom: 40px;
+}
+
+.contacts-icons {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+}
+
+.contacts-address-mail {
+    text-decoration: underline;
 }
 
 .contacts-address {
@@ -10,5 +41,29 @@
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
+    letter-spacing: 0.36px;
+    display: flex;
+    align-items: center;
+}
+
+.contacts-subtitle {
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+}
+
+.contacts-content {
+    margin-bottom: 40px;
+    margin-top: 70px;
+}
+
+.contacts-paragraph {
+    color: #9DA4BD;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 166.667%;
     letter-spacing: 0.36px;
 }
