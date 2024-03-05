@@ -4,7 +4,61 @@
 
 .book-service-section {
   width: 55%;
-  background-color: #191c19;
+  background-color: #191C26;
+  padding: 130px 40px 50px;
+}
+
+.contacts-form {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  margin-top: 44px;
+}
+
+.form-group {
+  display: flex;
+  gap: 30px;
+}
+
+.form-group > * {
+  flex-grow: 1;
+}
+
+.form-elements {
+  color: #fff;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  padding-bottom: 8px;
+}
+
+.form-elements::-moz-placeholder {
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.form-elements::placeholder {
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.form-elements:hover,
+.form-elements:focus {
+  outline: none;
+  border-bottom: 1px solid #fff;
+}
+
+.form-elements:hover::-moz-placeholder, .form-elements:focus::-moz-placeholder {
+  color: #fff;
+}
+
+.form-elements:hover::placeholder,
+.form-elements:focus::placeholder {
+  color: #fff;
 }
 
 .contacts-section {
