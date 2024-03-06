@@ -41,7 +41,7 @@
         <!--Sidebar-->
         <div class="sidebar-container">
           <a href="index.html">
-            <svg>
+            <svg width="69" height="56">
               <use href="./images/icons.svg#logo" />
             </svg>
           </a>
@@ -98,27 +98,47 @@
           <div class="hero-carousel-content">
             <!--Header-->
             <header class="hero-header">
-              <nav>
-                <ul class="nav-list">
-                  <li>
-                    <a class="nav-link nav-link-active" href="#about">About</a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="#prices">Services and Prices</a>
-                  </li>
-                  <li><a class="nav-link" href="#barbers">Barbers</a></li>
-                  <li><a class="nav-link" href="#contacts">Contacts</a></li>
-                </ul>
-              </nav>
-              <div class="header-cta">
-                <address>
-                  <a class="address-contacts" href="+380441111111"
-                    >+38 044 111 11 11</a
-                  >
-                </address>
-                <button class="book-service-button" type="button">
-                  book a Service
+              <a href="index.html" class="phone-logo">
+                <svg width="69" height="56">
+                  <use href="./images/icons.svg#logo" />
+                </svg>
+              </a>
+
+              <button type="button" class="nav-hambuger-menu" data-menu-open>
+                <i data-feather="menu"></i>
+              </button>
+              <div class="hero-navbar-menu" data-menu>
+                <button
+                  type="button"
+                  class="hambuger-menu-close-button"
+                  data-menu-close
+                >
+                  <i data-feather="x"></i>
                 </button>
+                <nav>
+                  <ul class="nav-list">
+                    <li>
+                      <a class="nav-link nav-link-active" href="#about"
+                        >About</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-link" href="#prices">Services and Prices</a>
+                    </li>
+                    <li><a class="nav-link" href="#barbers">Barbers</a></li>
+                    <li><a class="nav-link" href="#contacts">Contacts</a></li>
+                  </ul>
+                </nav>
+                <div class="header-cta">
+                  <address>
+                    <a class="address-contacts" href="+380441111111"
+                      >+38 044 111 11 11</a
+                    >
+                  </address>
+                  <button class="book-service-button" type="button">
+                    book a Service
+                  </button>
+                </div>
               </div>
             </header>
             <!--Hero title-->
@@ -159,18 +179,26 @@
       <main>
         <!--About section-->
         <section class="about-section" id="about">
-          <img
-            class="about-images"
-            srcset="./images/about-img1.jpg 1x, ./images/about-img1@2x.jpeg 2x"
-            src="./images/about-img1.jpg"
-            alt="trim beard"
-          />
-          <img
-            class="about-images"
-            srcset="./images/about-img2.jpg 1x, ./images/about-img2@2x.jpeg 2x"
-            src="./images/about-img2.jpg"
-            alt="cut hair"
-          />
+          <div class="about-images-container">
+            <img
+              class="about-images"
+              srcset="
+                ./images/about-img1.jpg     1x,
+                ./images/about-img1@2x.jpeg 2x
+              "
+              src="./images/about-img1.jpg"
+              alt="trim beard"
+            />
+            <img
+              class="about-images"
+              srcset="
+                ./images/about-img2.jpg     1x,
+                ./images/about-img2@2x.jpeg 2x
+              "
+              src="./images/about-img2.jpg"
+              alt="cut hair"
+            />
+          </div>
           <div class="about-content">
             <div class="subtitle-container">
               <img src="./images/divider.svg" alt="divider-bar" />
@@ -495,7 +523,9 @@
                 placeholder="Message"
                 class="form-elements"
               ></textarea>
-              <button class="book-service-button" type="submit">Send</button>
+              <button class="book-service-button form-button" type="submit">
+                Send
+              </button>
             </form>
           </section>
 

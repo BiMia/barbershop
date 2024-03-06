@@ -1,6 +1,5 @@
 .footer-section {
-  padding: 56px 55px;
-  height: 127px;
+  padding: 51px 31px 46px 31px;
   display: flex;
   justify-content: space-between;
 }
@@ -12,10 +11,20 @@
   font-weight: 600;
   line-height: normal;
   letter-spacing: 2.2px;
+  margin-top: 49px;
 }
 
 .footer-list {
   display: flex;
   gap: 40px;
   align-items: center;
+}
+
+@media screen and (width >= 768px) {
+  .footer-section {
+    padding: 56px 39px;
+  }
+  .footer-paragraph {
+    margin-top: 0;
+  }
 }/*# sourceMappingURL=footer.css.map */

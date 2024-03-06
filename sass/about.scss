@@ -35,6 +35,16 @@
 }
 
 @media screen and (width >= 768px) {
+    .about-section {
+        padding: 100px 39px;
+        display: flex;
+    }
+
+    .about-images-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
     .about-images {
         display: block;
         width: 330px;
@@ -54,6 +64,10 @@
         width: 270px;
         height: 445px;
         object-fit: cover;
+    }
+
+    .about-images-container {
+        flex-direction: row;
     }
 
     .title {

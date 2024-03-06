@@ -1,11 +1,7 @@
-.contacts-container {
-    display: flex;
-}
 
 .book-service-section {
-    width: 55%;
     background-color: #191C26;
-    padding: 130px 40px 50px;
+    padding: 84px 31px;
 }
 
 .contacts-form {
@@ -17,7 +13,8 @@
 
 .form-group {
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    gap: 44px;
 }
 
 .form-group > * {
@@ -55,11 +52,13 @@
     color: #fff;
 }
 
+.form-button {
+    margin: auto;
+}
+
 .contacts-section {
-    height: 644px;
     color: #fff;
-    width: 45%;
-    padding: 130px 100px;
+    padding: 84px 31px;
 
     background-color: rgba(25, 28, 38, 0.85);
     background-image:linear-gradient(rgba(17, 19, 25, 0.8),
@@ -71,6 +70,7 @@
 
 .contacts-title {
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .contacts-icons {
@@ -114,4 +114,46 @@
     font-weight: 400;
     line-height: 166.667%;
     letter-spacing: 0.36px;
+}
+
+@media screen and (width >= 768px) {
+  .book-service-section {
+    padding: 100px 39px;
+  }
+
+  .form-group {
+    flex-direction: row;
+    gap: 30px;
+}
+
+  .form-button {
+    margin: 0;
+  }
+
+  .contacts-section {
+    padding: 100px 39px;
+  }
+
+  .contacts-title {
+    text-align: left;
+  }
+}
+
+@media screen and (width >= 1158px) {
+  .contacts-container {
+    display: flex;
+  }
+
+  .book-service-section {
+    padding: 130px 40px 50px;
+  }
+
+  .book-service-section {
+    width: 55%;
+  }
+
+  .contacts-section {
+    width: 45%;
+    padding: 130px 100px;
+  }
 }
